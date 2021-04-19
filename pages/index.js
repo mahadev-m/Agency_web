@@ -1,65 +1,49 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="w-full flex">
       <Head>
-        <title>Create Next App</title>
+        <title>Agency-web</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+      <div className="bg-opacity-40 bgwave">
+        <div className="text-right  flex bg-opacity-40 mt-40">
+          <div className="w-1/2 text-left mx-40 pt-24">
+            <h1 className=" font-sans font-family:raleway font-bold text-5xl top-0 ">
+              We build awsome websites that Fresh, New ideas&
+              <span className="text-pink-500 text-opacity-100">
+                {" "}
+                Bold moves
+              </span>
+            </h1>
+            <p className="font-family:poppins place-items-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet,
             </p>
-          </a>
-        </div>
-      </main>
+            <img
+              className="left-0 mx-40 mt-8 "
+              src="https://demo.phlox.pro/agency-web/wp-content/uploads/sites/129/2019/10/Mask-Group-1.png"
+            />
+          </div>
+          <div className="w-1/2   ">
+            <img
+              className="pb-20"
+              src="https://demo.phlox.pro/agency-web/wp-content/uploads/sites/129/2019/10/Rounded-Rectangle-2-copy-13.png"
+            />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+            <img
+              className="pb-20"
+              src="https://demo.phlox.pro/agency-web/wp-content/uploads/sites/129/2019/10/Rounded-Rectangle-2-copy-6.png"
+            />
+          </div>
+        </div>
+        <div className="pr-28">
+          <img src="https://demo.phlox.pro/agency-web/wp-content/uploads/sites/129/2019/10/works.svg" />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
